@@ -9,7 +9,7 @@ namespace GenderPercentageProject
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
             // Configura la cadena de conexión a SQL Server (modifícala según tu entorno)
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Pelusa20**123;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Clave;TrustServerCertificate=True;");
 
             return new AppDbContext(optionsBuilder.Options);
         }
