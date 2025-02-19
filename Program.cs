@@ -48,7 +48,7 @@ namespace GenderPercentageProject
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Pelusa20**123;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Clave;TrustServerCertificate=True;");
             }
         }
     }
@@ -58,7 +58,7 @@ namespace GenderPercentageProject
         static async Task Main(string[] args)
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Pelusa20**123;TrustServerCertificate=True;")
+                .UseSqlServer("Server=localhost,1433;Database=AseguradoraSalud;User Id=sa;Password=Clave;TrustServerCertificate=True;")
                 .Options;
 
             using (var context = new AppDbContext(options))
